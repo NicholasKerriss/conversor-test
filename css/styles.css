@@ -69,6 +69,22 @@ input {
   border-radius: 4px;
 }
 
+.select-values {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  display: flex;
+  gap: 16px;
+  border-radius: 6px;
+  padding: 2px;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .header {
     flex-direction: column;
@@ -90,5 +106,15 @@ input {
 
   .header__text p {
     font-size: 16px;
+  }
+
+  .select-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select {
+    margin-bottom: 10px;
   }
 }

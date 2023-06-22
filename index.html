@@ -48,15 +48,32 @@
         </h1>
         <br />
         <p>
-          Digite o peso desejado, em libras, e receba o resultado em kilos.<br />
+          Selecione a medida desejada, digite o valor no campo de digitação, e receba o valor convertido.<br>
           Site em desenvolvimento, em breve atualização de mais medidas e
           evolução do layout...
         </p>
       </div>
     </header>
+    <section class="select-values">
+      <label for="selectFrom" class="label-de">De:</label>
+<select class="select" id="select-de">
+  <option value="Kg">Kilo</option>
+  <option value="Lb">Libra</option>
+  <option value="Oz">Ounce</option>
+</select>
+<label for="selectTo" class="label-para">Para:</label>
+  <select class="select" id="select-para">
+    <option value="Kg">Kilo</option>
+    <option value="Lb">Libra</option>
+    <option value="Oz">Ounce</option>
+  </select>
+
+    </section>
     <section class="section" id="section">
-      <label class="label">Digite sua medida em Libras</label>
+      <label for="input" class="label">Digite sua medida em Libras</label>
       <input type="number" id="input" />
+
+    
       <button class="section__btn" id="section__btn">
         <span style="font-size: 16px">Resultado</span>
         <svg
@@ -74,8 +91,9 @@
       </button>
     </section>
     <section class="section-result">
-      <label class="result">Medida convertida (kg):</label>
+      <label class="result">Medida convertida:</label>
     </section>
+    
     <script src="js/script.js"></script>
   </body>
 </html>
